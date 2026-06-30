@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace 'com.ext.live'
+    namespace 'com.ext.live.coreui'
     compileSdk 33
 
     defaultConfig {
@@ -56,8 +56,8 @@ publishing {
     publications {
         release(MavenPublication) {
             groupId = 'com.github.ajay-kumar-uft'
-            artifactId = 'live'
-            version = '1.0.0'
+            artifactId = 'core'
+            version = '1.0.1'
 
             afterEvaluate {
                 from components.release
