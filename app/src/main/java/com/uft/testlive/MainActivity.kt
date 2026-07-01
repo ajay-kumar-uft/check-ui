@@ -27,12 +27,7 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
-        try {
-            CoreUI().callSdk()
-        } catch (e: IllegalStateException) {
-            e.printStackTrace()
-            println("---- ${e.message}")
-        }
+        CoreUI().callSdk(this)
     }
 }
 

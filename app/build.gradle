@@ -64,6 +64,6 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
     implementation project(':core')
-    implementation 'com.github.ajay-kumar-uft:live:1.0.0'
+//    implementation 'com.github.ajay-kumar-uft:live:1.0.0'
 //    implementation 'com.github.ajay-kumar-uft:compute:1.0.1'
 }
