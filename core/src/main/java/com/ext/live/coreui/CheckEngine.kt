@@ -20,6 +20,7 @@ internal class CheckEngine : DocumentEngine<CheckRequest, CheckStarted, CheckEve
         model: CheckRequest,
         callback: DocumentCallback<CheckStarted, CheckEvent>
     ) {
+        println("------ process CheckEngine")
         model.context.startActivity(Intent(model.context, CheckCaptureActivity::class.java))
         callback.onResult(CheckStarted)
     }

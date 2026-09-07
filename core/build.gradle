@@ -57,7 +57,7 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.ajay-kumar-uft'
             artifactId = 'core'
-            version = '1.0.1'
+            version = '1.0.5'
 
             afterEvaluate {
                 from components.release
@@ -72,6 +72,7 @@ dependencies {
     implementation libs.androidx.activity.compose
     implementation platform(libs.androidx.compose.bom)
     implementation libs.androidx.compose.ui
-    implementation libs.androidx.startup.runtime
-    implementation libs.contour.engine
+//    implementation libs.contour.engine
+    implementation("androidx.startup:startup-runtime:1.2.0")
+    implementation 'com.github.ajay-kumar-uft:contour-engine:1.0.3'
 }
